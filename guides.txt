@@ -1,0 +1,11 @@
+// ${days} days->variable
+
+😁😀method calling//
+
+sum(state=true)
+
+sum({ bool state=false,int rupees=139}){
+    //function
+}
+
+//if you use @ required then value must be give during function calling

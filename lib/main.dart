@@ -1,4 +1,5 @@
-import 'package:ecommerce/home_page.dart';
+import 'package:ecommerce/pages/home_page.dart';
+import 'package:ecommerce/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,13 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   // build basically ui ka liya,UI refresh wagera build pa hota hain
   Widget build(BuildContext context) {
-    //states or variable widget ka nicha
-    // int days = 30;
-    // double ti = 3.2;
-    // num hi = 300.00;
-    // var jo = "sxhjs"; //int and double kisi bhi type ka ho skta hain
-    // const pi = 3.14; //cannot changed
-    // final ji = 1; //we can modify the final variables
-    return const MaterialApp(home: homepage());
+    return MaterialApp(
+      themeMode: ThemeMode.light,
+      theme: ThemeData(primarySwatch: Colors.red),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      routes: {
+        "/": (context) => LoginPage(),
+      },
+    );
   }
 }
